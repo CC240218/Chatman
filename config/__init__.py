@@ -8,6 +8,10 @@ import openai as ai
 
 import os
 
+# Definir o diretório para armazenar o __pycache__
+os.environ['PYTHONPYCACHEPREFIX'] = './pycache'
+
+
 # Importa suport ao .env
 from dotenv import load_dotenv 
 load_dotenv()
